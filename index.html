@@ -19,115 +19,141 @@
   <body>
     <div class="wrapper">
       <div class="content">
-        <header>
+        <header class="header">
           <div class="container">
-            <div class="header-top">
-              <a class="header-home" href="/"> Мир красоты</a>
+            <div class="header__top">
+              <a class="logo" href="/"> Мир красоты</a>
 
               <nav class="navigation">
-                <ul class="ul">
-                  <li><a href="#">Услуги и цены</a></li>
-                  <li><a href="#">Мастера</a></li>
-                  <li><a href="#">Наши работы</a></li>
-                  <li><a href="#">О нас</a></li>
-                  <li><a href="#">Контакты</a></li>
+                <ul class="navigation__list">
+                  <li class="navigation__item">
+                    <a class="navigation__link" href="#">Услуги и цены</a>
+                  </li>
+                  <li class="navigation__item">
+                    <a class="navigation__link" href="#">Мастера</a>
+                  </li>
+                  <li class="navigation__item">
+                    <a class="navigation__link" href="#">Наши работы</a>
+                  </li>
+                  <li class="navigation__item">
+                    <a class="navigation__link" href="#">Контакты</a>
+                  </li>
+                  <li class="navigation__item">
+                    <a class="navigation__link" href="#about">О нас</a>
+                  </li>
                 </ul>
               </nav>
 
-              <div class="header-tel">
+              <div class="header__tel">
                 <a href="tel:84996861762">8 (499) 686-17-62</a>
                 <div class="time">с 10.00 до 19.00 без выходных</div>
               </div>
             </div>
 
-            <div class="header-hero">
-                <div class="header-hero-text">
-                    <h1>Создай свой образ вместе с нами</h1>
-                    <p>Идеальный образ за 60 минут</p>
-                    <button class="sign-up">Записаться онлайн</button>
-                </div>
+            <div class="hero header__hero">
+              <div class="header-hero-text">
+                <h1>Создай свой образ вместе с нами</h1>
+                <p>Идеальный образ за 60 минут</p>
+                <button class="sign-up">Записаться онлайн</button>
+              </div>
 
-              <div class="header-girl">
+              <div class="girl header__girl">
                 <img src="/source/header-girl.png" alt="girl logo" />
                 <div class="header-girl-ellipse"></div>
               </div>
             </div>
+
+            <ul class="social social--vertical header__social">
+              <li>
+                <a href="#"><img src="/source/social-vk.svg" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="/source/social-inst.svg" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="/source/social-yt.svg" alt="" /></a>
+              </li>
+            </ul>
           </div>
         </header>
 
         <main>
           <div class="container">
-            <div class="about indent">
-              <div class="about-text">
-                <h2>О салоне</h2>
+            <section class="about" id="about">
+              <div class="about__content">
+                <div class="about__article">
+                  <h2 class="section__title">О салоне</h2>
 
-                <div class="about-text-thesis">
-                  Мир красоты - это уютный салон в самом центре города. Здесь
-                  работают профессиональные визажисты, стилисты и мастера
-                  татуажа
-                </div>
-
-                <p>
-                  Красота и хороший уход никогда не выходят из моды. Мы
-                  приглашаем Вас в место, где гармония обретает форму, а
-                  внешность становится отражением внутреннего мира. Новая жизнь
-                  начинается с небольших изменений. Мы помогаем нашим клиентам
-                  воплотить их индивидуальность во внешнем облике. Мы создаем
-                  стиль – вместе с Вами и для Вас.
-                </p>
-              </div>
-              <div class="about-video">
-                <img
-                  class="about-pic"
-                  src="/source/about-pic.jpg"
-                  alt="Видео о салоне"
-                />
-                <div class="about-video-button">
-                  <img src="/source/about-video-button.svg" alt="" />
-                  <div class="about-video-button-text">
-                    Короткое видео о нас
+                  <div class="about__thesis">
+                    Мир красоты - это уютный салон в самом центре города. Здесь
+                    работают профессиональные визажисты, стилисты и мастера
+                    татуажа
                   </div>
+
+                  <p class="about__text">
+                    Красота и хороший уход никогда не выходят из моды. Мы
+                    приглашаем Вас в место, где гармония обретает форму, а
+                    внешность становится отражением внутреннего мира. Новая
+                    жизнь начинается с небольших изменений. Мы помогаем нашим
+                    клиентам воплотить их индивидуальность во внешнем облике. Мы
+                    создаем стиль – вместе с Вами и для Вас.
+                  </p>
+                </div>
+
+                <div class="about__video video">
+                  <img
+                    class="video__preview"
+                    src="/source/about-pic.jpg"
+                    alt="Видео о салоне"
+                  />
+
+                  <a class="video__button video-button" href="#">
+                    <img class="video-button__icon" src="/source/about-video-button.svg" alt="" />
+                    <div class="video-button__text">
+                      Короткое видео о нас
+                    </div>
+                  </a>
                 </div>
               </div>
-            </div>
 
-            <div class="advantages indent">
-              <div class="advantage-unit">
-                <img
-                  src="/source/about-office.svg"
-                  alt="иконка Удобные кабинеты"
-                />
-                <h3>Удобные кабинеты</h3>
-                <p>
-                  Комфорт и стиль - принцип создания кабинетов салона красоты.
-                  Только эстетика и удобство для Вас
-                </p>
-              </div>
+              <div class="advantages">
+                <div class="advantage__item">
+                  <img class="advantage__icon" 
+                    src="/source/about-office.svg"
+                    alt="иконка Удобные кабинеты"
+                  />
+                  <h3 class="advantage__title">Удобные кабинеты</h3>
+                  <p class="advantage__content">
+                    Комфорт и стиль - принцип создания кабинетов салона красоты.
+                    Только эстетика и удобство для Вас
+                  </p>
+                </div>
 
-              <div class="advantage-unit">
-                <img
-                  src="/source/about-cosmetic.svg"
-                  alt="иконка Качественная косметика"
-                />
-                <h3>Качественная косметика</h3>
-                <p>
-                  Используем профессиональные материалы высшего качества лучших
-                  брендов
-                </p>
-              </div>
+                <div class="advantage__item">
+                  <img class="advantage__icon"
+                    src="/source/about-cosmetic.svg"
+                    alt="иконка Качественная косметика"
+                  />
+                  <h3 class="advantage__title">Качественная косметика</h3>
+                  <p class="advantage__content">
+                    Используем профессиональные материалы высшего качества
+                    лучших брендов
+                  </p>
+                </div>
 
-              <div class="advantage-unit">
-                <img
-                  src="/source/about-masters.svg"
-                  alt="иконка Опытные мастера"
-                />
-                <h3>Опытные мастера</h3>
-                <p>
-                  Работают только опытные мастера с чувством стиля. Смотрите
-                  наших специалистов в разделе Мастера
-                </p>
+                <div class="advantage__item">
+                  <img class="advantage__icon"
+                    src="/source/about-masters.svg"
+                    alt="иконка Опытные мастера"
+                  />
+                  <h3 class="advantage__title">Опытные мастера</h3>
+                  <p class="advantage__content">
+                    Работают только опытные мастера с чувством стиля. Смотрите
+                    наших специалистов в разделе Мастера
+                  </p>
+                </div>
               </div>
-            </div>
+            </section>
           </div>
         </main>
       </div>
@@ -136,18 +162,26 @@
         <div class="container">
           <div class="footer">
             <div class="privacy-policy">
-              <div>© 2020 «Море красоты»</div>
-              <a href="">Политика конфиденциальности</a>
+              <div class="privacy-policy__name">© 2020 «Море красоты»</div>
+              <a class="privacy-policy__link" href="">Политика конфиденциальности</a>
             </div>
 
             <nav class="navigation">
-              <ul>
-                <li><a href="#">Услуги и цены</a></li>
-                <li><a href="#">Мастера</a></li>
-                <li><a href="#">Наши работы</a></li>
-                <li><a href="#">Контакты</a></li>
-              </ul>
-            </nav>
+                <ul class="navigation__list">
+                  <li class="navigation__item">
+                    <a class="navigation__link" href="#">Услуги и цены</a>
+                  </li>
+                  <li class="navigation__item">
+                    <a class="navigation__link" href="#">Мастера</a>
+                  </li>
+                  <li class="navigation__item">
+                    <a class="navigation__link" href="#">Наши работы</a>
+                  </li>
+                  <li class="navigation__item">
+                    <a class="navigation__link" href="#">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
           </div>
         </div>
       </footer>
