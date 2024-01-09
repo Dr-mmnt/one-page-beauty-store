@@ -53,6 +53,7 @@ h2 {
 h3 {
   font-size: 18px;
   font-weight: 600;
+  margin: 0 0 8px;
 }
 
 .sign-up {
@@ -64,6 +65,10 @@ h3 {
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
+}
+.sign-up--small {
+  font-size: 12px;
+  padding: 10px 20px;
 }
 
 section {
@@ -112,6 +117,7 @@ section {
 
 .navigation {
   .navigation__list {
+    padding: 0;
     display: flex;
     list-style: none;
     font-size: 14px;
@@ -124,6 +130,13 @@ section {
 
   .navigation__link:hover {
     color: #00bf78;
+  }
+
+  .navigation__link--active:active {
+    color: #00bf78;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
   }
 }
 
@@ -283,6 +296,131 @@ section {
     text-align: center;
     margin: auto;
     overflow-wrap: break-word;
+  }
+}
+
+.table {
+  display: flex;
+  gap: 48px 30px;
+  flex-wrap: wrap;
+
+  .card {
+    width: 350px;
+
+    .card__pic {
+      width: 350px;
+      height: 180px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .card__title {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .card__text {
+      font-size: 12px;
+      font-weight: 400;
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.services__navigation {
+  margin-bottom: 53px;
+}
+
+.price {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px 125px;
+
+  .price__item {
+    width: 444px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .price__info {
+    max-width: 355px;
+  }
+
+  .price__title {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .price__text {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .price__number {
+    color: #00bf78;
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+
+.container--gray{
+  background: #F8F6F7;
+}
+
+.experts{
+  padding: 80px 0;
+}
+
+.experts__subtitle{
+  margin-bottom: 24px;
+}
+
+.experts__hover{
+  visibility: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f8f6f7;
+  text-align: center;
+}
+
+.experts__pic{
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.experts__card--hover:hover{
+  .experts__img{
+    filter: brightness(50%);
+  }
+    .experts__hover{
+      visibility: visible;
+    }
+}
+
+.experts__table {
+  display: flex;
+  column-gap: 30px;
+  
+  .experts__img {
+    width: 255px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .experts__post {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  
+  .experts__experience {
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
   }
 }
 
