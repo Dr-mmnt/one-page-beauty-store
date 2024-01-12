@@ -3,6 +3,7 @@
   section {
     margin-bottom: 70px;
   }
+
   .container {
     padding: 0 50px;
   }
@@ -23,21 +24,21 @@
 }
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
-    h2{
-        font-size: 40px;
-    }
+  h2 {
+    font-size: 40px;
+  }
 
-    .header .container{
-        padding: 0 30px;
-    }
+  .header .container {
+    padding: 0 30px;
+  }
 
-    .phone__number{
-        font-size: 14px;
-    }
+  .phone__number {
+    font-size: 14px;
+  }
 
-    .phone__time{
-        font-size: 9px;
-    }
+  .phone__time {
+    font-size: 9px;
+  }
   .navigation__list {
     gap: 10px;
   }
@@ -81,7 +82,7 @@
 
   .experts__table {
     flex-wrap: wrap;
-    column-gap: 0;
+    gap: 20px 0;
   }
   .experts__card {
     flex-basis: 330px;
@@ -95,20 +96,105 @@
     font-size: 14px;
   }
 
-  .advantage__item{
+  .advantage__item {
     text-align: center;
   }
 
-  .price{
+  .price {
     justify-content: center;
-  }
-  
-  .price__item{
-    width: 65%;
   }
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
+  .header__navigation {
+    visibility: hidden;
+    width: 0;
+  }
+
+  .girl {
+    visibility: hidden;
+  }
+
+  .hero {
+    padding-top: 0;
+  }
+
+  .hero__title {
+    font-size: 35px;
+  }
+
+  .hero__subtitle {
+    margin-bottom: 30px;
+  }
+
+  .header__social {
+    top: 100px;
+  }
+
+  .sign-up--media-small {
+    font-size: 12px;
+    padding: 10px 20px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .about__thesis {
+    font-size: 17px;
+  }
+
+  .about__text {
+    font-size: 12px;
+  }
+  section p {
+    font-size: 12px;
+  }
+
+  .video {
+    scale: 0.8;
+  }
+
+  .about__content {
+    margin-bottom: 30px;
+  }
+
+  .advantage__title {
+    font-size: 16px;
+  }
+
+  .advantage__icon {
+    scale: 0.8;
+  }
+
+  .advantage__content {
+    font-size: 10px;
+  }
+
+  .services__navigation .navigation__list {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .experts {
+    padding: 50px 0 20px;
+  }
+
+  .privacy-policy {
+    font-size: 12px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .footer {
+    flex-direction: column-reverse;
+  }
+
+  .footer .navigation__list {
+    justify-content: center;
+  }
+
+  /* TODO: убрать margin последней секции */
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
