@@ -107,8 +107,7 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   .header__navigation {
-    visibility: hidden;
-    width: 0;
+    display: none;
   }
 
   .girl {
@@ -198,7 +197,89 @@
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
+section{
+    margin-bottom: 20px;
 }
+
+.header__social{
+    visibility: hidden;
+}
+
+.logo{
+    font-size: 30px;
+    text-align: center;
+}
+
+.header__top{
+    flex-direction: column;
+    align-items: end;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.container{
+    padding: 0 20px;
+}
+
+.section__title{
+    margin-bottom: 15px;
+}
+
+.about__thesis{
+    font-size: 14px;
+}
+
+.about__text{
+    font-size: 10px;
+}
+
+.video{
+    scale: 0.6;
+}
+
+/* TODO: убрать отступ из-за scale на vidoe__preview */
+
+.advantages{
+    flex-direction: column;
+}
+
+.card__link{
+    scale: 0.8;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card__text{
+    text-align:justify;
+    width: 80%;
+}
+
+.price__info{max-width: 200px;}
+
+.price__title{
+    font-size: 14px;
+}
+
+.price__text{
+    font-size: 12px;
+}
+.price__number{
+    font-size: 14px;
+}
+
+.footer__navigation{
+    display: none;
+} 
+
+.privacy-policy__link{
+    text-align: right;
+}
+}
+
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
 }
