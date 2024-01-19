@@ -1,0 +1,289 @@
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1280px) {
+  section {
+    margin-bottom: 70px;
+  }
+
+  .container {
+    padding: 0 50px;
+  }
+
+  .header__social {
+    right: 15px;
+  }
+
+  .popular-services__table {
+    max-width: 730px;
+    margin: 0 auto;
+  }
+
+  .price {
+    column-gap: 0;
+    justify-content: space-between;
+  }
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  h2 {
+    font-size: 40px;
+  }
+
+  .header .container {
+    padding: 0 30px;
+  }
+
+  .phone__number {
+    font-size: 14px;
+  }
+
+  .phone__time {
+    font-size: 9px;
+  }
+  .navigation__list {
+    gap: 10px;
+  }
+
+  .navigation__item {
+    text-align: center;
+    font-size: smaller;
+  }
+
+  .header__girl {
+    opacity: 0.5;
+  }
+
+  .hero {
+    padding-top: 220px;
+    padding-bottom: 50px;
+  }
+
+  .hero__text {
+    position: relative;
+    z-index: 1;
+  }
+
+  .about__content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .table {
+    row-gap: 15px;
+    justify-content: space-between;
+  }
+
+  .card {
+    max-width: 300px;
+  }
+
+  .card__pic {
+    max-width: 300px;
+    max-height: auto;
+  }
+
+  .experts__table {
+    flex-wrap: wrap;
+    gap: 20px 0;
+  }
+  .experts__card {
+    flex-basis: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about__text {
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+
+  .advantage__item {
+    text-align: center;
+  }
+
+  .price {
+    justify-content: center;
+  }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+.mobile-navigation--visiblity{
+  display:block;
+}
+
+  .header__navigation {
+    display: none;
+  }
+
+  .girl {
+    visibility: hidden;
+  }
+
+  .hero {
+    padding-top: 0;
+  }
+
+  .hero__title {
+    font-size: 35px;
+  }
+
+  .hero__subtitle {
+    margin-bottom: 30px;
+  }
+
+  .header__social {
+    top: 100px;
+  }
+
+  .sign-up--media-small {
+    font-size: 12px;
+    padding: 10px 20px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .about__thesis {
+    font-size: 17px;
+  }
+
+  .about__text {
+    font-size: 12px;
+  }
+  section p {
+    font-size: 12px;
+  }
+
+  .video {
+    scale: 0.8;
+  }
+
+  .about__content {
+    margin-bottom: 30px;
+  }
+
+  .advantage__title {
+    font-size: 16px;
+  }
+
+  .advantage__icon {
+    scale: 0.8;
+  }
+
+  .advantage__content {
+    font-size: 10px;
+  }
+
+  .services__navigation .navigation__list {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .experts {
+    padding: 50px 0 20px;
+  }
+
+  .privacy-policy {
+    font-size: 12px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .footer {
+    flex-direction: column-reverse;
+  }
+
+  .footer .navigation__list {
+    justify-content: center;
+  }
+
+  /* TODO: убрать margin последней секции */
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+section{
+    margin-bottom: 20px;
+}
+
+.header__social{
+    visibility: hidden;
+}
+
+.logo{
+    font-size: 30px;
+    text-align: center;
+}
+
+.header__top{
+    flex-direction: column;
+    align-items: end;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.container{
+    padding: 0 20px;
+}
+
+.section__title{
+    margin-bottom: 15px;
+}
+
+.about__thesis{
+    font-size: 14px;
+}
+
+.about__text{
+    font-size: 10px;
+}
+
+.video{
+    scale: 0.6;
+}
+
+/* TODO: убрать отступ из-за scale на vidoe__preview */
+
+.advantages{
+    flex-direction: column;
+}
+
+.card__link{
+    scale: 0.8;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card__text{
+    text-align:justify;
+    width: 80%;
+}
+
+.price__info{max-width: 200px;}
+
+.price__title{
+    font-size: 14px;
+}
+
+.price__text{
+    font-size: 12px;
+}
+.price__number{
+    font-size: 14px;
+}
+
+.footer__navigation{
+    display: none;
+} 
+
+.privacy-policy__link{
+    text-align: right;
+}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+}

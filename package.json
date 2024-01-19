@@ -1,0 +1,27 @@
+{
+  "name": "one-page-beauty-store",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "browser-sync": "^3.0.2",
+    "cssnano": "^6.0.3",
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-postcss": "^9.1.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "postcss": "^8.4.33",
+    "sass": "^1.69.7"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
