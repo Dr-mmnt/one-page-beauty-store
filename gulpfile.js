@@ -37,7 +37,7 @@ function buildHtml() {
 }
 
 function copy() {
-  return src(["src/images/**/*"],{base:'src'}).pipe(dest("dist"));
+  return src(["src/images/**/*.*"],{base:'src'}).pipe(dest("dist"));
 }
 
 // Таск очистки dist
