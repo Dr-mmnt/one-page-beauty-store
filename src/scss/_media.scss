@@ -106,6 +106,10 @@
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
+.mobile-navigation--visiblity{
+  display:block;
+}
+
   .header__navigation {
     display: none;
   }

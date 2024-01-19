@@ -4,12 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Мир красоты</title>
-    <link
-      rel="stylesheet"
-      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
-    />
-    <link rel="stylesheet" href="/style.css" />
-    <link rel="stylesheet" href="/media.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,6 +13,39 @@
     />
   </head>
   <body>
+    <nav class="mobile-navigation mobile-navigation--visiblity">
+      <div id="menuToggle">
+        <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+        <input type="checkbox" />
+
+        <!--
+    Some spans to act as a hamburger.
+    
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+        <ul id="menu">
+          <a href="/"><li>Домой</li></a>
+          <a href="#services"><li>Услуги и цены</li></a>
+          <a href="#experts"><li>Мастера</li></a>
+          <a href="#"><li>Наши работы</li></a>
+          <a href="#"><li>Контакты</li></a>
+          <a href="#about"><li>О нас</li></a>
+        </ul>
+      </div>
+    </nav>
+
     <div class="wrapper">
       <div class="content">
         <header class="header">
@@ -48,8 +76,10 @@
               </nav>
 
               <div class="header__phone phone">
-                <a class="phone__number" href="tel:84996861762">8 (499) 686-17-62</a>
-                <div class="phone__time ">с 10.00 до 19.00 без выходных</div>
+                <a class="phone__number" href="tel:84996861762"
+                  >8 (499) 686-17-62</a
+                >
+                <div class="phone__time">с 10.00 до 19.00 без выходных</div>
               </div>
             </div>
 
@@ -57,23 +87,25 @@
               <div class="hero__text">
                 <h1 class="hero__title">Создай свой образ вместе с нами</h1>
                 <p class="hero__subtitle">Идеальный образ за 60 минут</p>
-                <button class="sign-up sign-up--media-small">Записаться онлайн</button>
+                <button class="sign-up sign-up--media-small">
+                  Записаться онлайн
+                </button>
               </div>
 
               <div class="girl header__girl">
-                <img src="/source/header-girl.png" alt="girl logo" />
+                <img src="./images/header-girl.png" alt="girl logo" />
               </div>
             </div>
 
             <ul class="social social--vertical header__social">
               <li>
-                <a href="#"><img src="/source/social-vk.svg" alt="" /></a>
+                <a href="#"><img src="./images/social-vk.svg" alt="" /></a>
               </li>
               <li>
-                <a href="#"><img src="/source/social-inst.svg" alt="" /></a>
+                <a href="#"><img src="./images/social-inst.svg" alt="" /></a>
               </li>
               <li>
-                <a href="#"><img src="/source/social-yt.svg" alt="" /></a>
+                <a href="#"><img src="./images/social-yt.svg" alt="" /></a>
               </li>
             </ul>
           </div>
@@ -81,42 +113,42 @@
 
         <main>
           <div class="container">
-            <section class="about" id="about">
+            <section class="section about" id="about">
               <div class="about__content">
-                  <div class="about__article">
-                    <h2 class="section__title">О салоне</h2>
+                <div class="about__article">
+                  <h2 class="section__title">О салоне</h2>
 
-                    <div class="about__thesis">
-                      Мир красоты - это уютный салон в самом центре города.
-                      Здесь работают профессиональные визажисты, стилисты и
-                      мастера татуажа
-                    </div>
-
-                    <p class="about__text">
-                      Красота и хороший уход никогда не выходят из моды. Мы
-                      приглашаем Вас в место, где гармония обретает форму, а
-                      внешность становится отражением внутреннего мира. Новая
-                      жизнь начинается с небольших изменений. Мы помогаем нашим
-                      клиентам воплотить их индивидуальность во внешнем облике.
-                      Мы создаем стиль – вместе с Вами и для Вас.
-                    </p>
+                  <div class="about__thesis">
+                    Мир красоты - это уютный салон в самом центре города. Здесь
+                    работают профессиональные визажисты, стилисты и мастера
+                    татуажа
                   </div>
 
-                  <div class="about__video video">
-                    <img
-                      class="video__preview"
-                      src="/source/about-pic.jpg"
-                      alt="Видео о салоне"
-                    />
+                  <p class="about__text">
+                    Красота и хороший уход никогда не выходят из моды. Мы
+                    приглашаем Вас в место, где гармония обретает форму, а
+                    внешность становится отражением внутреннего мира. Новая
+                    жизнь начинается с небольших изменений. Мы помогаем нашим
+                    клиентам воплотить их индивидуальность во внешнем облике. Мы
+                    создаем стиль – вместе с Вами и для Вас.
+                  </p>
+                </div>
 
-                    <a class="video__button video-button" href="#">
-                      <img
-                        class="video-button__icon"
-                        src="/source/about-video-button.svg"
-                        alt=""
-                      />
-                      <div class="video-button__text">Короткое видео о нас</div>
-                    </a>
+                <div class="about__video video">
+                  <img
+                    class="video__preview"
+                    src="./images/about-pic.jpg"
+                    alt="Видео о салоне"
+                  />
+
+                  <a class="video__button video-button" href="#">
+                    <img
+                      class="video-button__icon"
+                      src="./images/about-video-button.svg"
+                      alt=""
+                    />
+                    <div class="video-button__text">Короткое видео о нас</div>
+                  </a>
                   <!-- </div> -->
                 </div>
               </div>
@@ -125,7 +157,7 @@
                 <div class="advantage__item">
                   <img
                     class="advantage__icon"
-                    src="/source/about-office.svg"
+                    src="./images/about-office.svg"
                     alt="иконка Удобные кабинеты"
                   />
                   <h3 class="advantage__title">Удобные кабинеты</h3>
@@ -138,7 +170,7 @@
                 <div class="advantage__item">
                   <img
                     class="advantage__icon"
-                    src="/source/about-cosmetic.svg"
+                    src="./images/about-cosmetic.svg"
                     alt="иконка Качественная косметика"
                   />
                   <h3 class="advantage__title">Качественная косметика</h3>
@@ -151,7 +183,7 @@
                 <div class="advantage__item">
                   <img
                     class="advantage__icon"
-                    src="/source/about-masters.svg"
+                    src="./images/about-masters.svg"
                     alt="иконка Опытные мастера"
                   />
                   <h3 class="advantage__title">Опытные мастера</h3>
@@ -161,17 +193,18 @@
                   </p>
                 </div>
               </div>
-            </section>  <!-- about -->
+            </section>
+            <!-- about -->
           </div>
 
           <div class="container">
-            <section class="popular-services" id="popular-services">
+            <section class="section popular-services" id="popular-services">
               <h2 class="section__title">Популярные услуги</h2>
               <div class="popular-services__table table">
                 <div class="card">
                   <a href="#" class="card__link">
                     <img
-                      src="/source/sevices-pic.jpg"
+                      src="./images/sevices-pic.jpg"
                       alt=""
                       class="card__pic"
                     />
@@ -188,7 +221,7 @@
                 <div class="card">
                   <a href="#" class="card__link">
                     <img
-                      src="/source/sevices-pic.jpg"
+                      src="./images/sevices-pic.jpg"
                       alt=""
                       class="card__pic"
                     />
@@ -206,7 +239,7 @@
                 <div class="card">
                   <a href="#" class="card__link">
                     <img
-                      src="/source/sevices-pic.jpg"
+                      src="./images/sevices-pic.jpg"
                       alt=""
                       class="card__pic"
                     />
@@ -224,7 +257,7 @@
                 <div class="card">
                   <a href="#" class="card__link">
                     <img
-                      src="/source/sevices-pic.jpg"
+                      src="./images/sevices-pic.jpg"
                       alt=""
                       class="card__pic"
                     />
@@ -241,7 +274,7 @@
                 <div class="card">
                   <a href="#" class="card__link">
                     <img
-                      src="/source/sevices-pic.jpg"
+                      src="./images/sevices-pic.jpg"
                       alt=""
                       class="card__pic"
                     />
@@ -256,11 +289,12 @@
                   </button>
                 </div>
               </div>
-            </section>  <!-- popular-services -->
+            </section>
+            <!-- popular-services -->
           </div>
 
           <div class="container">
-            <section class="services" id="services">
+            <section class="section services" id="services">
               <h2 class="section__title">Услуги и цены</h2>
               <nav class="services__navigation navigation">
                 <ul class="navigation__list">
@@ -367,12 +401,13 @@
                   <div class="price__number">3000 ₽</div>
                 </div>
               </div>
-            </section>  <!-- services -->
+            </section>
+            <!-- services -->
           </div>
 
           <div class="container--gray">
             <div class="container">
-              <section class="experts" id="experts">
+              <section class="section experts" id="experts">
                 <h2 class="section__title">Мастера</h2>
                 <div class="experts__subtitle">
                   Дружная команда настоящих профессионалов
@@ -383,7 +418,7 @@
                       <a href="#" class="experts__link">
                         <img
                           class="experts__img"
-                          src="/source/expert-Krasnova.jpg"
+                          src="./images/expert-Krasnova.jpg"
                           alt="Краснова Ирина"
                         />
                         <div class="experts__hover">
@@ -401,7 +436,7 @@
                       <a href="#" class="experts__link">
                         <img
                           class="experts__img"
-                          src="/source/expert-Kalilova.jpg"
+                          src="./images/expert-Kalilova.jpg"
                           alt="Калилова Жанна"
                         />
                         <div class="experts__hover">
@@ -419,7 +454,7 @@
                       <a href="#" class="experts__link">
                         <img
                           class="experts__img"
-                          src="/source/expert-Kiseleva.jpg"
+                          src="./images/expert-Kiseleva.jpg"
                           alt="Киселева Алина"
                         />
                         <div class="experts__hover">
@@ -437,7 +472,7 @@
                       <a href="#" class="experts__link">
                         <img
                           class="experts__img"
-                          src="/source/expert-Ivanova.jpg"
+                          src="./images/expert-Ivanova.jpg"
                           alt="Иванова Елена"
                         />
                         <div class="experts__hover">
@@ -450,7 +485,8 @@
                     <p class="experts__experience">опыт работы 5 лет</p>
                   </div>
                 </div>
-              </section> <!-- experts -->
+              </section>
+              <!-- experts -->
             </div>
           </div>
         </main>
