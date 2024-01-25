@@ -60,6 +60,26 @@ h3 {
   margin: 0 0 8px;
 }
 
+// Common types of text
+.text {
+  &-abstract {
+    font-size: 20px;
+  }
+
+  &-basic{
+    font-size: 16px;
+  }
+
+  &-description{
+    font-size: 14px;
+  }
+
+  &-caption{
+    font-size: 12px
+  }
+
+
+}
 .section {
   margin-bottom: 100px;
 
@@ -82,4 +102,9 @@ h3 {
   max-width: 1110px;
   margin: auto;
   position: relative;
+}
+
+.link {
+  text-decoration: underline;
+  color: #278aff;
 }

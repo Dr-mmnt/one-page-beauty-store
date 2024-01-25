@@ -29,7 +29,7 @@
     align-items: baseline;
     padding-top: 30px;
   }
-  
+
   &__social {
     position: absolute;
     right: 0;
@@ -41,7 +41,6 @@
   font-size: 24px;
   font-weight: 700;
 }
-
 
 .navigation {
   &__list {
@@ -90,7 +89,6 @@
     margin-bottom: 59px;
   }
 }
-
 
 .girl {
   position: absolute;
@@ -143,14 +141,12 @@
 
   &__thesis {
     max-width: 570px;
-    font-size: 20px;
     line-height: 32px;
     margin-bottom: 16px;
   }
 
   &__text {
     max-width: 540px;
-    font-size: 16px;
     line-height: 26px;
   }
 }
@@ -234,15 +230,7 @@
     margin-bottom: 20px;
   }
 
-  &__title {
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 8px;
-  }
-
   &__text {
-    font-size: 12px;
-    font-weight: 400;
     margin-bottom: 16px;
   }
 }
@@ -267,13 +255,7 @@
   }
 
   &__title {
-    font-size: 18px;
     font-weight: 500;
-  }
-
-  &__text {
-    font-size: 14px;
-    font-weight: 400;
   }
 
   &__number {
@@ -332,8 +314,6 @@
   }
 
   &__post {
-    font-size: 14px;
-    font-weight: 400;
     margin-bottom: 20px;
   }
 
@@ -350,6 +330,62 @@
 }
 /* TODO: убрать margin последней секции */
 
+.contacts {
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+}
+
+.communication {
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0;
+  padding-bottom: 32px;
+}
+
+.contacts-social__text {
+  margin-bottom: 12px;
+}
+
+.quick-registration {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  background-color: #fff;
+  max-width: 445px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+
+  &__title {
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    margin-bottom: 35px;
+  }
+
+  &__form{
+    margin-bottom: 16px;
+  }
+}
+
+.sign-form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+
+  &__input {
+    padding: 15px 16px;
+    border-radius: 4px;
+    border: 1px solid #d8d8d8;
+    color: #a0a0a0;
+  }
+}
+
+.personal-data{
+  font-weight: 300;
+}
 
 .footer {
   padding: 20px 0;
@@ -361,11 +397,6 @@
 .privacy-policy {
   &__name {
     margin-bottom: 8px;
-  }
-
-  &__link {
-    text-decoration: underline;
-    color: #278aff;
   }
 }
 
